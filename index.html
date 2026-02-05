@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia Ma</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <style>
+        /* 1. RESET & BASIC SETUP */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* 2. THE BACKGROUND IMAGE */
+        .bg-container {
+            background-image: url('./bg.png');
+            
+            /* This ensures the image covers the whole screen */
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            /* Flexbox to center the content perfectly */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* 3. THE DARK OVERLAY BOX */
+        .content-box {
+            /* Dark Green color with 85% opacity (0.85) */
+            background-color: rgba(22, 54, 46, 0.9); 
+            padding: 3rem 2rem;
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        /* 4. TYPOGRAPHY */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: 'Patrick Hand', cursive; /* Handwritten style */
+            font-size: 1.5rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .incoming {
+            margin-bottom: 0; /* Removes extra space below the last line */
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            p { font-size: 1.2rem; }
+            .content-box { width: 90%; padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <div class="content-box">
+            <h1>Sonia Ma</h1>
+            <p>
+                5th year of PhD at the University of Melbourne, training in applied econometrics.
+            </p>
+            <p class="incoming">
+                My website is incoming!
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
