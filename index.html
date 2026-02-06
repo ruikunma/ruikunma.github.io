@@ -24,6 +24,7 @@
 
         /* 2. THE BACKGROUND IMAGE */
         .bg-container {
+            /* Ensure this matches your actual file name exactly */
             background-image: url('./bg.png');
             
             /* This ensures the image covers the whole screen */
@@ -41,7 +42,7 @@
 
         /* 3. THE DARK OVERLAY BOX */
         .content-box {
-            /* Dark Green color with 85% opacity (0.85) */
+            /* Dark Green color with 90% opacity */
             background-color: rgba(22, 54, 46, 0.9); 
             padding: 3rem 2rem;
             width: 80%;
@@ -49,13 +50,14 @@
             text-align: center;
             color: white;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border-radius: 8px;
         }
 
         /* 4. TYPOGRAPHY */
         h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             font-weight: 600;
         }
 
@@ -67,8 +69,22 @@
             font-weight: 400;
         }
 
+        /* Link Styling (Light Gold) for visibility on Dark Green */
+        a {
+            color: #ffeb3b; 
+            text-decoration: none;
+            border-bottom: 1px dotted #ffeb3b;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+
+        /* Removes extra space below the last line */
         .incoming {
-            margin-bottom: 0; /* Removes extra space below the last line */
+            margin-bottom: 0; 
         }
 
         /* Mobile Adjustments */
@@ -84,11 +100,19 @@
     <div class="bg-container">
         <div class="content-box">
             <h1>Sonia Ma</h1>
+            
             <p>
-                5th year of PhD at the University of Melbourne, training in applied econometrics.
+                <strong>PhD Candidate in Economics, University of Melbourne</strong><br>
+                <a href="mailto:ruikunm@student.unimelb.edu.au">ruikunm@student.unimelb.edu.au</a><br>
+                <a href="https://www.linkedin.com/in/sonia-ma-36a15b331/" target="_blank">LinkedIn Profile</a>
             </p>
+
+            <p>
+                My research combines archival history with modern data science. I build original datasets from local gazetteers and political texts to examine how cultural norms shape women's life chances over the long run.
+            </p>
+
             <p class="incoming">
-                My website is incoming!
+                View my <a href="https://www.linkedin.com/in/sonia-ma-36a15b331/" target="_blank">LinkedIn Profile</a> for more details about my work. More updates to this website are incoming!
             </p>
         </div>
     </div>
